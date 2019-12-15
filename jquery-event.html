@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery Click Event</title>
+</head>
+<body>
+	<div id="note">Hello, World!</div>
+	<button>Toggle</button>
+	
+	<script src="jquery.js"></script>
+	<script>
+		$("#note").css({
+			"color": "red",
+			"background-color": "yellow",
+			"padding": "10px"
+		});
+		
+		$("button").click( function () {
+			$("#note").slideToggle("fast");
+		});
+	</script>
+</body>
+</html>
